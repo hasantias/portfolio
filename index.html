@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AHT's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5d74b3c9e4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="all">
+    <!--navbar-->
+    <nav class="navbar">
+        <div class="navbar-logo">
+            <span>Abed Hasan Tias</span>
+        </div>
+        <ul class="navbar-links">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#hire">Hire Me</a></li>
+            <li><a href="#contact">Contact Me</a></li>
+        </ul>
+    </nav>
+    <!--intro-->
+    <div class="intro">
+        <div class="name">
+            <h1>I'm <span>Abed Hasan Tias</span></h1>
+            <h2>Web/App Developer. UI/UX Designer. Graphics Designer</h2>
+        </div>
+        <div class="backg">
+            <img src="pic.jpg" class="face" alt="me">
+        </div>
+    </div>
+    <!--about-->
+    <section id="about" class="section-about">
+        <div class="about-container">
+            <!-- Left Section -->
+            <div class="about-left">
+                <div class="about-info">
+                    <img src="1.jpg" alt="Profile Picture" class="profile-picture">
+                    <h2>About Me</h2>
+                    <ul class="personal-info">
+                        <li><strong>Name:</strong> Abu Hossain Mohammad Abed Hasan Tias</li>
+                        <li><strong>Date of Birth:</strong> September 8th, 2001</li>
+                        <li><strong>From:</strong> Dhaka, Bangladesh</li>
+                    </ul>
+                    <h3>Hobbies</h3>
+                    <ul class="hobbies-list">
+                        <li>Art</li>
+                        <li>Pixel Art</li>
+                        <li>Photography</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Right Section -->
+            <div class="about-right">
+                <div class="about-details">
+                    <h2>Details</h2>
+                    <!-- Education -->
+                    <div class="about-section">
+                        <h3><u>Education</u></h3>
+                        <table class="education-table">
+                            <tr>
+                                <th>Institute</th>
+                                <th>Year</th>
+                                <th>Grade</th>
+                            </tr>
+                            <tr>
+                                <td>Sher-e-bangla Nagar Govt. Boys High School</td>
+                                <td>SSC 2018</td>
+                                <td>4.83</td>
+                            </tr>
+                            <tr>
+                                <td>Cambrian College</td>
+                                <td>HSC 2020</td>
+                                <td>4.63</td>
+                            </tr>
+                            <tr>
+                                <td><a href="https://www.bracu.ac.bd/">Brac University</a></td>
+                                <td>Studying</td>
+                                <td>2.34</td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <!-- Qualifications -->
+                    <div class="about-section">
+                        <h3><u>Qualifications</u></h3>
+                        <ul class="qualifications-list">
+                            <li>Web Developer</li>
+                            <li>App Developer</li>
+                            <li>UI/UX Designer</li>
+                            <li>Graphics Designer</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- language -->
+                    <table class="language-table">
+                        <tr>
+                            <th colspan="3"><u>languages, I know</u></th>
+                        </tr>
+                        <tr>
+                            <td>Python</td>
+                            <td>HTML</td>
+                            <td>CSS</td>
+                        </tr>
+                        <tr>
+                            <td>PHP</td>
+                            <td>MySQL</td>
+                            <td>Tailwind CSS</td>
+                        </tr>
+                        <tr>
+                            <td>Javascript</td>
+                            <td>MERN</td>
+                            <td>Laravel</td>
+                        </tr>
+                    </table>
+
+                    <!-- Qualities -->
+                    <div class="about-section">
+                        <h3><u>Qualities</u></h3>
+                        <ul class="qualities-list">
+                            <li>Team Player</li>
+                            <li>Detail-oriented</li>
+                            <li>Effective Communicator</li>
+                            <li>Problem Solver</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--hire-->
+    <section id="hire" class="section-hire">
+        <h6>.</h6>
+        <div class="hire-container">
+            <div class="hire-left">
+                <h2>To Hire Me</h2>
+                <p>I excell at making web/app with excellent design
+                    and focus on user satisfaction. I use my creative
+                    imagination to achieve great outcomes, although a
+                    design no matter how fancy is valueless, if it doesn't
+                    provide support for the user. Thus, with both of this at
+                    focus, I show great outcomes.
+                    </p>
+                <a href="your-cv.pdf" class="hire-button">Hire Me / Download CV</a>
+            </div>
+            <div class="hire-right">
+                <blockquote>
+                    "There is nothing either good or bad but thinking makes it so."
+                </blockquote>
+                <footer>-by William Shakespeare, Hamlet</footer>
+            </div>
+        </div> 
+    </section>
+    <!--contact-->
+    <section id="contact" class="section-contact">
+        <h6>.</h6>
+        <div class="contact-container">
+            <div class="contact-left">
+                <h2>Contact Me</h2>
+                <form action="#" method="POST">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="comment">Comment:</label>
+                    <textarea id="comment" name="comment" rows="4" required></textarea>
+
+                    <button type="submit">Submit</button>
+                </form>
+                <div class="feedback">
+                    <h3>Feedback</h3>
+                    <textarea id="feedback" name="feedback" rows="4"></textarea>
+                    <button type="submit">Submit Feedback</button>
+                </div>
+            </div>
+            <div class="contact-right">
+                <h2>Connect with Me</h2>
+                <table class="social-links">
+                    <tr>
+                        <td><a href="mailto:atex.odd@gmail.com" target="_blank"><i class="fa-sharp fa-solid fa-at"></i></a></td>
+                        <td><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></td>
+                        <td><a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></td>
+                        <td><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+    <footer class="footer-section">
+        <div class="footer-content">
+            <p>&copy; 2024 AHT. All rights reserved.</p>
+            <div>
+                <p>Last edited: <span id="lastEdited"></span></p>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Function to format the date and time
+            function formatDate(date) {
+                var options = { 
+                    year: "numeric", 
+                    month: "long", 
+                    day: "numeric", 
+                    hour: "numeric", 
+                    minute: "numeric", 
+                    second: "numeric",
+                    hour12: false // Use 24-hour format
+                };
+                return date.toLocaleDateString("en-US", options);
+            }
+    
+            // Get the last modified timestamp of the document
+            var lastModified = new Date(document.lastModified);
+            
+            // Format the date and time
+            var formattedDate = formatDate(lastModified);
+            
+            // Display the formatted date and time on the website
+            document.getElementById("lastEdited").textContent = formattedDate;
+        });
+        // JavaScript to fetch and display user's current location
+        if ('geolocation' in navigator) {
+            navigator.geolocation.getCurrentPosition(function(position) {
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                
+                // Using OpenCage Geocoder API for reverse geocoding
+                var apiKey = 'YOUR_OPENCAGE_API_KEY'; // Replace with your API key
+                var apiUrl = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKey}`;
+                
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(data => {
+                        var locationElement = document.getElementById('location');
+                        if (data.results.length > 0) {
+                            var locationName = data.results[0].formatted || 'Unknown Location';
+                            locationElement.innerHTML = `Your current location: ${locationName}`;
+                        } else {
+                            locationElement.innerHTML = `Your current location: ${latitude.toFixed(2)}, ${longitude.toFixed(2)}`;
+                        }
+                    })
+                    .catch(error => {
+                        console.error('Error fetching location:', error);
+                        var locationElement = document.getElementById('location');
+                        locationElement.innerHTML = `Error fetching location: ${latitude.toFixed(2)}, ${longitude.toFixed(2)}`;
+                    });
+            });
+        } else {
+            var locationElement = document.getElementById('location');
+            locationElement.innerHTML = 'Geolocation is not supported in this browser.';
+        }
+    </script>
+     
+</body>
+</html>
