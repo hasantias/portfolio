@@ -1,261 +1,213 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AHT's Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/5d74b3c9e4.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Full Stack Developer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Linking FontAwesome for Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="all">
-    <!--navbar-->
-    <nav class="navbar">
-        <div class="navbar-logo">
-            <span>Abed Hasan Tias</span>
+  <!-- Custom Inverse Cursor -->
+  <div class="cursor-lens"></div>
+
+  <!-- Navigation Header -->
+  <nav class="navbar">
+    <div class="logo">Abu Hossain Mohammad Abed Hasan Tias</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Intro Section -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1 class="hero-main-text">
+        <!-- Hover Avatar Inline Reveal -->
+        <div class="hero-avatar-inline-wrapper">
+          <div class="hero-avatar-inline">
+            <img src="me.jpeg" alt="[Your Hero Photo]" class="hero-avatar">
+          </div>
         </div>
-        <ul class="navbar-links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#hire">Hire Me</a></li>
-            <li><a href="#contact">Contact Me</a></li>
-        </ul>
-    </nav>
-    <!--intro-->
-    <div class="intro">
-        <div class="name">
-            <h1>I'm <span>Abed Hasan Tias</span></h1>
-            <h2>Web/App Developer. UI/UX Designer. Graphics Designer</h2>
-        </div>
-        <div class="backg">
-            <img src="pic.jpg" class="face" alt="me">
-        </div>
+        <span class="hero-title-text">Hi, I'm <span class="highlight name-hover-trigger">Abed Hasan Tias</span></span>
+      </h1>
+      <h2>A Full Stack Web Developer.</h2>
+      <p>I build intuitive, scalable, and beautifully designed web applications. Specializing in modern frameworks and polished user experiences.</p>
+      <a href="#projects" class="btn btn-primary">View My Work</a>
     </div>
-    <!--about-->
-    <section id="about" class="section-about">
-        <div class="about-container">
-            <!-- Left Section -->
-            <div class="about-left">
-                <div class="about-info">
-                    <img src="1.jpg" alt="Profile Picture" class="profile-picture">
-                    <h2>About Me</h2>
-                    <ul class="personal-info">
-                        <li><strong>Name:</strong> Abu Hossain Mohammad Abed Hasan Tias</li>
-                        <li><strong>Date of Birth:</strong> September 8th, 2001</li>
-                        <li><strong>From:</strong> Dhaka, Bangladesh</li>
-                    </ul>
-                    <h3>Hobbies</h3>
-                    <ul class="hobbies-list">
-                        <li>Art</li>
-                        <li>Pixel Art</li>
-                        <li>Photography</li>
-                    </ul>
-                </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <!-- Organized Photo Section -->
+        <div class="about-image">
+          <img src="me.jpeg" alt="[Your Profile Photo]" class="profile-img">
+        </div>
+        <!-- Text and Information Stacked -->
+        <div class="about-content">
+          <div class="about-text">
+            <p>Recent Computer Science graduate with hands-on experience in full-stack development (React, Flask, MERN). Built multiple academic projects involving web applications and databases. Eager to apply technical and problem-solving skills in a professional environment.</p>
+          </div>
+          
+          <div class="about-cards-grid">
+            <!-- Details Card -->
+            <div class="about-card">
+              <h3 class="card-title"><i class="fas fa-user-circle"></i> Details</h3>
+              <ul class="info-list compact">
+                <li><strong>Role:</strong> Web Developer/Full Stack Developer</li>
+                <li><strong>Email:</strong> atex.odd@gmail.com</li>
+                <li><strong>Location:</strong> 167/3/C/3 Onward Orison, Taltola Mullapara, Dhaka</li>
+              </ul>
             </div>
             
-            <!-- Right Section -->
-            <div class="about-right">
-                <div class="about-details">
-                    <h2>Details</h2>
-                    <!-- Education -->
-                    <div class="about-section">
-                        <h3><u>Education</u></h3>
-                        <table class="education-table">
-                            <tr>
-                                <th>Institute</th>
-                                <th>Year</th>
-                                <th>Grade</th>
-                            </tr>
-                            <tr>
-                                <td>Sher-e-bangla Nagar Govt. Boys High School</td>
-                                <td>SSC 2018</td>
-                                <td>4.83</td>
-                            </tr>
-                            <tr>
-                                <td>Cambrian College</td>
-                                <td>HSC 2020</td>
-                                <td>4.63</td>
-                            </tr>
-                            <tr>
-                                <td><a href="https://www.bracu.ac.bd/">Brac University</a></td>
-                                <td>Studying</td>
-                                <td>2.34</td>
-                            </tr>
-                        </table>
-                    </div>
-
-                    <!-- Qualifications -->
-                    <div class="about-section">
-                        <h3><u>Qualifications</u></h3>
-                        <ul class="qualifications-list">
-                            <li>Web Developer</li>
-                            <li>App Developer</li>
-                            <li>UI/UX Designer</li>
-                            <li>Graphics Designer</li>
-                        </ul>
-                    </div>
-                    
-                    <!-- language -->
-                    <table class="language-table">
-                        <tr>
-                            <th colspan="3"><u>languages, I know</u></th>
-                        </tr>
-                        <tr>
-                            <td>Python</td>
-                            <td>HTML</td>
-                            <td>CSS</td>
-                        </tr>
-                        <tr>
-                            <td>PHP</td>
-                            <td>MySQL</td>
-                            <td>Tailwind CSS</td>
-                        </tr>
-                        <tr>
-                            <td>Javascript</td>
-                            <td>MERN</td>
-                            <td>Laravel</td>
-                        </tr>
-                    </table>
-
-                    <!-- Qualities -->
-                    <div class="about-section">
-                        <h3><u>Qualities</u></h3>
-                        <ul class="qualities-list">
-                            <li>Team Player</li>
-                            <li>Detail-oriented</li>
-                            <li>Effective Communicator</li>
-                            <li>Problem Solver</li>
-                        </ul>
-                    </div>
-                </div>
+            <!-- Education Card -->
+            <div class="about-card">
+              <h3 class="card-title"><i class="fas fa-graduation-cap"></i> Education</h3>
+              <ul class="info-list compact">
+                <li><strong>Degree:</strong> B.Sc. Computer Science</li>
+                <li><strong>University:</strong> Brac University</li>
+                <li><strong>Graduated:</strong> January 2026</li>
+              </ul>
             </div>
+
+            <!-- Skills Card -->
+            <div class="about-card full-width">
+              <h3 class="card-title"><i class="fas fa-laptop-code"></i> Technical Skills</h3>
+              <div class="tech-stack inline-stack">
+                <span>HTML5 / CSS3</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Node.js</span>
+                <span>Python</span>
+                <span>MySQL</span>
+                <span>MongoDB</span>
+                <span>Git & GitHub</span>
+                <span>Flask</span>
+                <span>MERN</span>
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!--hire-->
-    <section id="hire" class="section-hire">
-        <h6>.</h6>
-        <div class="hire-container">
-            <div class="hire-left">
-                <h2>To Hire Me</h2>
-                <p>I excell at making web/app with excellent design
-                    and focus on user satisfaction. I use my creative
-                    imagination to achieve great outcomes, although a
-                    design no matter how fancy is valueless, if it doesn't
-                    provide support for the user. Thus, with both of this at
-                    focus, I show great outcomes.
-                    </p>
-                <a href="your-cv.pdf" class="hire-button">Hire Me / Download CV</a>
-            </div>
-            <div class="hire-right">
-                <blockquote>
-                    "There is nothing either good or bad but thinking makes it so."
-                </blockquote>
-                <footer>-by William Shakespeare, Hamlet</footer>
-            </div>
-        </div> 
-    </section>
-    <!--contact-->
-    <section id="contact" class="section-contact">
-        <h6>.</h6>
-        <div class="contact-container">
-            <div class="contact-left">
-                <h2>Contact Me</h2>
-                <form action="#" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" name="comment" rows="4" required></textarea>
-
-                    <button type="submit">Submit</button>
-                </form>
-                <div class="feedback">
-                    <h3>Feedback</h3>
-                    <textarea id="feedback" name="feedback" rows="4"></textarea>
-                    <button type="submit">Submit Feedback</button>
-                </div>
-            </div>
-            <div class="contact-right">
-                <h2>Connect with Me</h2>
-                <table class="social-links">
-                    <tr>
-                        <td><a href="mailto:atex.odd@gmail.com" target="_blank"><i class="fa-sharp fa-solid fa-at"></i></a></td>
-                        <td><a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a></td>
-                        <td><a href="#" target="_blank"><i class="fa-brands fa-square-instagram"></i></a></td>
-                        <td><a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a></td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-    </section>
-    <footer class="footer-section">
-        <div class="footer-content">
-            <p>&copy; 2024 AHT. All rights reserved.</p>
-            <div>
-                <p>Last edited: <span id="lastEdited"></span></p>
-            </div>
-        </div>
-    </footer>
+      </div>
     </div>
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Function to format the date and time
-            function formatDate(date) {
-                var options = { 
-                    year: "numeric", 
-                    month: "long", 
-                    day: "numeric", 
-                    hour: "numeric", 
-                    minute: "numeric", 
-                    second: "numeric",
-                    hour12: false // Use 24-hour format
-                };
-                return date.toLocaleDateString("en-US", options);
-            }
-    
-            // Get the last modified timestamp of the document
-            var lastModified = new Date(document.lastModified);
-            
-            // Format the date and time
-            var formattedDate = formatDate(lastModified);
-            
-            // Display the formatted date and time on the website
-            document.getElementById("lastEdited").textContent = formattedDate;
-        });
-        // JavaScript to fetch and display user's current location
-        if ('geolocation' in navigator) {
-            navigator.geolocation.getCurrentPosition(function(position) {
-                var latitude = position.coords.latitude;
-                var longitude = position.coords.longitude;
-                
-                // Using OpenCage Geocoder API for reverse geocoding
-                var apiKey = 'YOUR_OPENCAGE_API_KEY'; // Replace with your API key
-                var apiUrl = `https://api.opencagedata.com/geocode/v1/json?q=${latitude}+${longitude}&key=${apiKey}`;
-                
-                fetch(apiUrl)
-                    .then(response => response.json())
-                    .then(data => {
-                        var locationElement = document.getElementById('location');
-                        if (data.results.length > 0) {
-                            var locationName = data.results[0].formatted || 'Unknown Location';
-                            locationElement.innerHTML = `Your current location: ${locationName}`;
-                        } else {
-                            locationElement.innerHTML = `Your current location: ${latitude.toFixed(2)}, ${longitude.toFixed(2)}`;
-                        }
-                    })
-                    .catch(error => {
-                        console.error('Error fetching location:', error);
-                        var locationElement = document.getElementById('location');
-                        locationElement.innerHTML = `Error fetching location: ${latitude.toFixed(2)}, ${longitude.toFixed(2)}`;
-                    });
-            });
-        } else {
-            var locationElement = document.getElementById('location');
-            locationElement.innerHTML = 'Geolocation is not supported in this browser.';
-        }
-    </script>
-     
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section id="projects" class="projects">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      
+      <!-- Interactive Projects Carousel -->
+      <div class="carousel-container" id="projectCarousel">
+        
+        <!-- Project Slide 1 -->
+        <div class="project-slide active">
+          <div class="project-media">
+            <!-- Default Screenshot -->
+            <img src="image.png" alt="[Demo Project 1]" class="project-screenshot">
+            <!-- Video that plays on hover -->
+            <video class="project-video" loop muted playsinline>
+              <!-- Generic placeholder demo video -->
+              <source src="demo 1.mp4" type="video/mp4">
+            </video>
+            <div class="hover-text">Hover to View Demo</div>
+          </div>
+          <div class="project-details">
+            <h3 class="project-name">Project 1: Habit Tracker</h3>
+            <p class="project-desc">An interactive task management system aimed to make tasks fun and shareable among users.</p>
+            <div class="tech-stack">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>Flask</span>
+              <span>TailwindCSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/hasantias/habit-tracker" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+              <!--Project 1 Live Demo Button-->
+              <a href="#" class="btn btn-primary demo-paused" onclick="event.preventDefault();"><i
+                  class="fas fa-external-link-alt"></i>Live Demo<span class="tooltip-msg">Hosting paused because I chose food over servers. Tough decisions.</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project Slide 2 -->
+        <div class="project-slide">
+          <div class="project-media">
+            <!-- Default Screenshot -->
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=800&q=80" alt="[Demo Project 2]" class="project-screenshot">
+            <!-- Video that plays on hover -->
+            <video class="project-video" loop muted playsinline>
+              <!-- Generic placeholder demo video -->
+              <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            </video>
+            <div class="hover-text">Hover to View Demo</div>
+          </div>
+          <div class="project-details">
+            <h3 class="project-name">Project 2: Stock Management & Shop</h3>
+            <p class="project-desc">An online shop for variety of types of sellers and buyers. Where the buyer can buy and stock large quantity of items and seller can stock and manage their items online.</p>
+            <div class="tech-stack">
+              <span>MERN</span>
+              <span>Express</span>
+              <span>React</span>
+              <span>MongoDB</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/hasantias/stock-management" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
+              <!--Project 2 Live Demo Button-->
+              <a href="#" class="btn btn-primary demo-paused" onclick="event.preventDefault();"><i
+                  class="fas fa-external-link-alt"></i>Live Demo<span class="tooltip-msg">Hosting paused because I chose food over servers. Tough decisions.</span></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Carousel Indicators / Dots -->
+        <div class="carousel-indicators">
+          <span class="dot active" data-slide="0"></span>
+          <span class="dot" data-slide="1"></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Connect / Bottom Section -->
+  <section id="contact" class="contact">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="contact-subtitle">I'm currently looking for new opportunities. Whether you have an exciting project or just want to connect, feel free to reach out!</p>
+      
+      <div class="contact-actions">
+        <!-- Direct download link for Recruiter CV -->
+        <a href="cv website.pdf" download class="btn btn-primary btn-large">
+          <i class="fas fa-download"></i> Download Resume / CV
+        </a>
+        
+        <!-- Mailto link instantly opens local email client -->
+        <a href="mailto:atex.odd@gmail.com" class="btn btn-outline btn-large">
+          <i class="fas fa-envelope"></i> Send an Email
+        </a>
+      </div>
+
+      <!-- Social Connecting Links -->
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/abed-hasan-tias-8097133b3" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/hasantias" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="#" class="demo-paused" onclick="event.preventDefault();"><i class="fab fa-twitter"></i><span
+            class="tooltip-msg">I decided not to fight strangers online.</span></a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Built with HTML, Vanilla CSS & JS.</p>
+  </footer>
+
+  <script src="js/script.js"></script>
 </body>
 </html>
